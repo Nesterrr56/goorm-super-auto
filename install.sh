@@ -28,13 +28,7 @@ red "几点提示:
 green "能行吗?[Y/n]："
 read confirm
 
-if [[ x$confirm == x || $confirm == "y" || $confirm == "Y" || 1 == 1]]
-then
-  green "好嘞 ...";echo
-else
-  red "拜拜了您嘞...";echo
-  exit 0
-fi
+green "好嘞 ...";echo
 
 if [[ -d $HOME/.goormide ]]
 then
